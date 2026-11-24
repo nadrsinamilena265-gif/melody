@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWICE — THIS IS FOR | MELODY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="icon.PNG">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="logo-font"><h1>melody</h1></a>
+        </div>
+        <nav class="nav">
+            <div class="navigation">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            </div>
+        </nav>      
+    </header>
+
+    <div class="product-container">
+        <div class="product-main">
+            <div class="product-gallery">
+                <div class="product-slider">
+                    <input type="radio" name="product-slider" id="ps1" class="slider-input" checked>
+                    <input type="radio" name="product-slider" id="ps2" class="slider-input">
+                    <div class="slide ps1">
+                        <img src="this-is-for-cover.JPG" alt="TWICE — THIS IS FOR обложка">
+                    </div>
+                    <div class="slide ps2">
+                        <img src="this-is-for-vinyl.jpeg" alt="TWICE — THIS IS FOR пластинка">
+                    </div>
+                    <div class="product-slider-arrows">
+                        <label for="ps2" class="ps-arrow ps-arrow-right"></label>
+                        <label for="ps1" class="ps-arrow ps-arrow-left"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info-section">
+                <h1 class="product-title">THIS IS FOR</h1>
+                <h2 class="product-artist">TWICE</h2>
+                
+                <div class="product-rating-block">
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-count">(756 отзывов)</span>
+                </div>
+
+                <div class="product-price-block">
+                    <span class="current-price">2 653 ₽</span>
+                    <span class="old-price">3 790 ₽</span>
+                </div>
+
+                <div class="product-option">
+                    <label class="option-label">Состояние:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="condition" value="new" checked>
+                            <span>Новая</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="condition" value="used">
+                            <span>Б/у</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="product-tabs-section">
+            <input type="radio" name="tabs" id="tab-description" checked class="tab-input">
+            <input type="radio" name="tabs" id="tab-tracklist" class="tab-input">
+            
+            <div class="tabs-header">
+                <label for="tab-description" class="tab-btn">Описание</label>
+                <label for="tab-tracklist" class="tab-btn">Трек-лист</label>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-pane" id="description">
+                    <h3>О альбоме</h3>
+                    <p><strong>2025</strong></p>
+                    <p>Пятнадцатый мини-альбом (корейский релиз). Искреннее посвящение преданным фанатам ONCE. Содержит неожиданный сингл с участием Megan Thee Stallion. Дебютировал #1 в Circle Chart. Более взрослый, зрелый звук по сравнению с ранними кокетливыми релизами.</p>
+                </div>
+
+                <div class="tab-pane" id="tracklist">
+                    <h3>Список треков</h3>
+                    <ol class="tracklist">
+                        <li><span class="track-num">01</span> FOUR</li>
+                        <li><span class="track-num">02</span> THIS IS FOR</li>
+                        <li><span class="track-num">03</span> OPTIONS</li>
+                        <li><span class="track-num">04</span> MARS</li>
+                        <li><span class="track-num">05</span> RIGHT HAND GIRL</li>
+                        <li><span class="track-num">06</span> PEACH GELATO</li>
+                        <li><span class="track-num">07</span> HI HELLO</li>
+                        <li><span class="track-num">08</span> BATTITUDE</li>
+                        <li><span class="track-num">09</span> DAT AHH DAT OOH</li>
+                        <li><span class="track-num">10</span> LET LOVE GO</li>
+                        <li><span class="track-num">11</span> G.O.A.T.</li>
+                        <li><span class="track-num">12</span> TALK</li>
+                        <li><span class="track-num">13</span> SEESAW</li>
+                        <li><span class="track-num">14</span> HEARTBREAK AVENUE</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

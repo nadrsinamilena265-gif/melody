@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MELODY — Виниловый магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.PNG">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="logo"><a href="index.html" class="logo-font">melody</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-inner">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+                <a href="cart.html" class="nav_link cart-link-mobile">КОРЗИНА <span class="cart-badge-mobile">2</span></a>
+                <a href="login.html" class="nav_link">ВХОД</a>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+            <a href="about.html" class="nav_link">О НАС</a>
+            <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            <a href="cart.html" class="nav_link cart-link">КОРЗИНА <span class="cart-badge">2</span></a>
+            <a href="login.html" class="nav_link">ВХОД</a>
+        </nav>
+    </div>
+</header>
+
+<section class="slider-new" id="main">
+    <div class="slider-section">
+        <div class="slides">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="slide slide1">
+                <div class="slide-bg slide-bg-desktop" style="background-image: url('slide1.PNG');"></div>
+                <div class="slide-bg slide-bg-mobile" style="background-image: url('slide1-mobile.jpg');"></div>
+                <div class="slide-content slide-content--right-bottom">
+                    <h2 class="slide-title">Новинки</h2>
+                    <p class="slide-text">Свежие поступления винила. Первыми слушайте лучшие альбомы.</p>
+                    <a href="#novelties" class="slide-btn">К НОВИНКАМ</a>
+                </div>
+            </div>
+
+            <div class="slide slide2">
+                <div class="slide-bg slide-bg-desktop" style="background-image: url('slide2.PNG');"></div>
+                <div class="slide-bg slide-bg-mobile" style="background-image: url('slide2-mobile.jpg');"></div>
+                <div class="slide-content slide-content--left-bottom">
+                    <h2 class="slide-title">Хиты</h2>
+                    <p class="slide-text">Легендарные альбомы, которые обязаны быть в вашей коллекции.</p>
+                    <a href="#popular" class="slide-btn">К ХИТАМ</a>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="slide-bg slide-bg-desktop" style="background-image: url('slide3.PNG');"></div>
+                <div class="slide-bg slide-bg-mobile" style="background-image: url('slide3-mobile.jpg');"></div>
+                <div class="slide-content slide-content--right-bottom">
+                    <h2 class="slide-title">Акции</h2>
+                    <p class="slide-text">Скидки до 30% на коллекционные издания. Успейте!</p>
+                    <a href="#promo-sales" class="slide-btn">К АКЦИЯМ</a>
+                </div>
+            </div>
+
+            <div class="main-slider-arrows">
+                <label for="slide2" class="main-arrow main-arrow-right"></label>
+                <label for="slide1" class="main-arrow main-arrow-left"></label>
+                <label for="slide3" class="main-arrow main-arrow-right"></label>
+                <label for="slide2" class="main-arrow main-arrow-left"></label>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-sections container">
+    <section class="popular-promo novelties" id="novelties">
+        <div class="promo-container">
+            <h2 class="section-title">НОВИНКИ</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="card-image">
+                        <span class="badge badge-new">НОВИНКА</span>
+                        <img src="arirang-cover.JPG" alt="BTS — ARIRANG">
+                    </div>
+                    <div class="card-content">
+                        <h3>ARIRANG</h3>
+                        <p class="product-artist-mini">BTS</p>
+                        <div class="price"><span class="new-price">5 490 ₽</span></div>
+                        <a href="arirang.html" class="card-btn">ПОДРОБНЕЕ →</a>
+                    </div>
+                </div>
+
+                <div class="promo-card promo-wide">
+                    <div class="card-image">
+                        <span class="badge badge-new">НОВИНКА</span>
+                        <img src="iceman-cover.JPG" alt="Drake — ICEMAN">
+                    </div>
+                    <div class="card-content">
+                        <h3>ICEMAN</h3>
+                        <p class="product-artist-mini">Drake</p>
+                        <div class="price"><span class="new-price">4 790 ₽</span></div>
+                        <a href="iceman.html" class="card-btn">ПОДРОБНЕЕ →</a>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <div class="card-image">
+                        <span class="badge badge-new">НОВИНКА</span>
+                        <img src="dont-be-dumb-cover.JPG" alt="A$AP Rocky — Don't Be Dumb">
+                    </div>
+                    <div class="card-content">
+                        <h3>Don't Be Dumb</h3>
+                        <p class="product-artist-mini">A$AP Rocky</p>
+                        <div class="price"><span class="new-price">3 990 ₽</span></div>
+                        <a href="dont-be-dumb.html" class="card-btn">ПОДРОБНЕЕ →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block section-promo" id="promo-sales">
+        <h2 class="block-title-sale">Акции</h2>
+        <span class="badge badge-promo">Виниловая коллекция</span>
+        <p class="promo-subtitle">Лимитированные издания альбомов со скидкой <i>30%</i> до конца месяца</p>
+
+        <span class="badge badge-promo">Пластинка в подарок</span>
+        <p class="promo-subtitle">При заказе от <i>5000₽</i> вы получаете случайный альбом в подарок.</p>
+
+        <span class="badge badge-promo">Обмен шума на тишину</span>
+        <p class="promo-subtitle">Любой старый CD или пластинка = скидка <i>15%</i> на новый альбом.</p>
+        <a href="catalog.html" class="promo-button">Перейти в каталог →</a>
+    </section>
+
+    <section class="section-block section-popular" id="popular">
+        <div class="block-header">
+            <h2 class="block-title">Популярное</h2>
+        </div>
+        <div class="products-grid">
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="badge badge-hit">ХИТ</span>
+                    <img src="blonde-cover.JPG" alt="Frank Ocean — Blonde" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Blonde</h3>
+                    <p class="product-artist-mini artist-popular">Frank Ocean</p>
+                    <div class="product-price"><span class="new-price">6 990 ₽</span></div>
+                    <a href="blonde.html" class="card-btn">Подробнее →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="badge badge-hit">ХИТ</span>
+                    <img src="brat-cover.JPG" alt="Charli XCX — BRAT" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">BRAT</h3>
+                    <p class="product-artist-mini artist-popular">Charli XCX</p>
+                    <div class="product-price"><span class="new-price">3 490 ₽</span></div>
+                    <a href="brat.html" class="card-btn">Подробнее →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="badge badge-hit">ХИТ</span>
+                    <img src="sos-cover.JPG" alt="SZA — SOS" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">SOS</h3>
+                    <p class="product-artist-mini artist-popular">SZA</p>
+                    <div class="product-price"><span class="new-price">4 490 ₽</span></div>
+                    <a href="sos.html" class="card-btn">Подробнее →</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <span class="badge badge-hit">ХИТ</span>
+                    <img src="starboy-cover.JPG" alt="The Weeknd — Starboy" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Starboy</h3>
+                    <p class="product-artist-mini artist-popular">The Weeknd</p>
+                    <div class="product-price"><span class="new-price">4 290 ₽</span></div>
+                    <a href="starboy.html" class="card-btn">Подробнее →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col brand">
+            <a href="index.html" class="footer-logo">MELODY</a>
+            <p class="footer-tagline">Ваш проводник в мир винила и музыки. Качественные пластинки, редкие издания и уникальные коллекции.</p>
+        </div>
+        <div class="footer-col nav">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contacts">
+            <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+            <p>г. Миасс, ул. Мелодичная, 118</p>
+            <p>+7 (937) 162-49-60</p>
+            <p>info@melody-shop.ru</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">MAX</a>
+                <a href="#" class="social-btn">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>© 2026 MELODY. Все права защищены.</p></div>
+</footer>
+
+<a href="#" class="scroll-top"><span class="scroll-top-arrow">↑</span></a>
+</body>
+</html>

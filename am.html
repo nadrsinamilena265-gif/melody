@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Monkeys — AM | MELODY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="icon.PNG">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="logo-font"><h1>melody</h1></a>
+        </div>
+        <nav class="nav">
+            <div class="navigation">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            </div>
+        </nav>      
+    </header>
+
+    <div class="product-container">
+        <div class="product-main">
+            <div class="product-gallery">
+                <div class="product-slider">
+                    <input type="radio" name="product-slider" id="ps1" class="slider-input" checked>
+                    <input type="radio" name="product-slider" id="ps2" class="slider-input">
+                    <div class="slide ps1">
+                        <img src="am-cover.JPG" alt="Arctic Monkeys — AM обложка">
+                    </div>
+                    <div class="slide ps2">
+                        <img src="am-vinyl.jpeg" alt="Arctic Monkeys — AM пластинка">
+                    </div>
+                    <div class="product-slider-arrows">
+                        <label for="ps2" class="ps-arrow ps-arrow-right"></label>
+                        <label for="ps1" class="ps-arrow ps-arrow-left"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info-section">
+                <h1 class="product-title">AM</h1>
+                <h2 class="product-artist">Arctic Monkeys</h2>
+                
+                <div class="product-rating-block">
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-count">(214 отзывов)</span>
+                </div>
+
+                <div class="product-price-block">
+                    <span class="current-price">4 990 ₽</span>
+                </div>
+
+                <div class="product-option">
+                    <label class="option-label">Состояние:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="condition" value="new" checked>
+                            <span>Новая</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="condition" value="used">
+                            <span>Б/у</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <div class="product-tabs-section">
+            <input type="radio" name="tabs" id="tab-description" checked class="tab-input">
+            <input type="radio" name="tabs" id="tab-tracklist" class="tab-input">
+            
+            <div class="tabs-header">
+                <label for="tab-description" class="tab-btn">Описание</label>
+                <label for="tab-tracklist" class="tab-btn">Трек-лист</label>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-pane" id="description">
+                    <h3>О альбоме</h3>
+                    <p><strong>2013</strong></p>
+                    <p>Пятый студийный альбом. Непревзойдённый эталон рока 2010-х. Четыре гремящих сингла, включая легендарные «Do I Wanna Know?» и «R U Mine?». 8-кратно платиновый в Великобритании. Часто входит в топ-10 лучших альбомов десятилетия. Звучит всё ещё дерзко и свежо.</p>
+                </div>
+
+                <div class="tab-pane" id="tracklist">
+                    <h3>Список треков</h3>
+                    <ol class="tracklist">
+                        <li><span class="track-num">01</span> Do I Wanna Know?</li>
+                        <li><span class="track-num">02</span> R U Mine?</li>
+                        <li><span class="track-num">03</span> One for the Road</li>
+                        <li><span class="track-num">04</span> Arabella</li>
+                        <li><span class="track-num">05</span> I Want It All</li>
+                        <li><span class="track-num">06</span> No. 1 Party Anthem</li>
+                        <li><span class="track-num">07</span> Mad Sounds</li>
+                        <li><span class="track-num">08</span> Fireside</li>
+                        <li><span class="track-num">09</span> Why'd You Only Call Me When You're High?</li>
+                        <li><span class="track-num">10</span> Snap Out of It</li>
+                        <li><span class="track-num">11</span> Knee Socks</li>
+                        <li><span class="track-num">12</span> I Wanna Be Yours</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа | MELODY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/icon.PNG">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo"><a href="index.html" class="logo-font">melody</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-inner">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+                <a href="cart.html" class="nav_link cart-link-mobile">КОРЗИНА <span class="cart-badge-mobile">2</span></a>
+                <a href="login.html" class="nav_link">ВХОД</a>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+            <a href="about.html" class="nav_link">О НАС</a>
+            <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            <a href="cart.html" class="nav_link cart-link">КОРЗИНА <span class="cart-badge">2</span></a>
+            <a href="login.html" class="nav_link">ВХОД</a>
+        </nav>
+    </div>
+</header>
+
+<main class="checkout-container">
+    <div class="checkout-header">
+        <h1>ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+    </div>
+    
+    <div class="checkout-grid">
+        <div class="checkout-form">
+            <form action="order-success.html">
+                <div class="form-section">
+                    <h3>Контактная информация</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Адрес доставки</h3>
+                    <div class="form-group">
+                        <label for="city">Город *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Улица, дом, квартира *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal_code">Индекс</label>
+                        <input type="text" id="postal_code" name="postal_code">
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Способ доставки</h3>
+                    <div class="radio-group">
+                        <label class="radio-label"><input type="radio" name="delivery_method" value="post" checked> <span>Почта России</span></label>
+                        <label class="radio-label"><input type="radio" name="delivery_method" value="courier"> <span>Курьером</span></label>
+                        <label class="radio-label"><input type="radio" name="delivery_method" value="pickup"> <span>Самовывоз (бесплатно)</span></label>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Способ оплаты</h3>
+                    <div class="radio-group">
+                        <label class="radio-label"><input type="radio" name="payment_method" value="card_online" checked> <span>Картой онлайн</span></label>
+                        <label class="radio-label"><input type="radio" name="payment_method" value="card_delivery"> <span>Картой при получении</span></label>
+                        <label class="radio-label"><input type="radio" name="payment_method" value="cash"> <span>Наличными при получении</span></label>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3>Комментарий к заказу</h3>
+                    <textarea name="comment" rows="3" placeholder="Дополнительные пожелания..."></textarea>
+                </div>
+                
+                <button type="submit" class="place-order-btn">Подтвердить заказ →</button>
+            </form>
+        </div>
+        
+        <div class="order-summary">
+            <h3>Ваш заказ</h3>
+            <div class="order-item">
+                <div class="order-item-info">
+                    <span class="order-item-name">Blonde</span>
+                    <span class="order-item-qty">x1</span>
+                </div>
+                <span class="order-item-price">6 990 ₽</span>
+            </div>
+            <div class="order-item">
+                <div class="order-item-info">
+                    <span class="order-item-name">HIT ME HARD AND SOFT</span>
+                    <span class="order-item-qty">x1</span>
+                </div>
+                <span class="order-item-price">2 793 ₽</span>
+            </div>
+            
+            <div class="order-total-row">
+                <span>Товары:</span>
+                <span>9 783 ₽</span>
+            </div>
+            <div class="order-total-row">
+                <span>Доставка:</span>
+                <span>Бесплатно</span>
+            </div>
+            <div class="order-grand-total">
+                <span>Итого:</span>
+                <span>9 783 ₽</span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ФУТЕР -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col brand">
+            <a href="index.html" class="footer-logo">MELODY</a>
+            <p class="footer-tagline">Ваш проводник в мир винила и музыки.</p>
+        </div>
+        <div class="footer-col nav">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contacts">
+            <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+            <p>г. Миасс, ул. Мелодичная, 118</p>
+            <p>+7 (937) 162-49-60</p>
+            <p>info@melody-shop.ru</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">MAX</a>
+                <a href="#" class="social-btn">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>© 2026 MELODY. Все права защищены.</p></div>
+</footer>
+
+<a href="#" class="scroll-top"><span class="scroll-top-arrow">↑</span></a>
+</body>
+</html>

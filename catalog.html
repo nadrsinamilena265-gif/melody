@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | MELODY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.PNG">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="logo"><a href="index.html" class="logo-font">melody</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-inner">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+                <a href="cart.html" class="nav_link cart-link-mobile">КОРЗИНА <span class="cart-badge-mobile">2</span></a>
+                <a href="login.html" class="nav_link">ВХОД</a>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+            <a href="about.html" class="nav_link">О НАС</a>
+            <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            <a href="cart.html" class="nav_link cart-link">КОРЗИНА <span class="cart-badge">2</span></a>
+            <a href="login.html" class="nav_link">ВХОД</a>
+        </nav>
+    </div>
+</header>
+
+<div class="video-hero">
+    <video autoplay muted loop playsinline>
+        <source src="catalog-video.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</div>
+
+<main class="catalog-section">
+    <div class="catalog-header">
+        <h1 class="catalog-title">КАТАЛОГ</h1>
+    </div>
+
+    <div class="filters-panel">
+        <form class="filters-form" action="#" onsubmit="return false;">
+            <div class="filter-group">
+                <span class="filter-label">Жанр:</span>
+                <div class="filter-btns">
+                    <a href="#" class="filter-btn active">Все</a>
+                    <a href="#" class="filter-btn">Pop</a>
+                    <a href="#" class="filter-btn">R&B</a>
+                    <a href="#" class="filter-btn">Rock</a>
+                    <a href="#" class="filter-btn">K-Pop</a>
+                    <a href="#" class="filter-btn">Rap</a>
+                </div>
+            </div>
+            <div class="filter-group search-group">
+                <span class="filter-label">Поиск:</span>
+                <input type="text" class="search-input" placeholder="Название альбома или исполнитель...">
+            </div>
+            <div class="filter-actions">
+                <button type="submit" class="filter-submit">Применить</button>
+                <a href="catalog.html" class="filter-reset">Сбросить всё</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="genre-desc active" id="desc-all">
+        <h3>Все жанры</h3>
+        <p>Полная коллекция винила MELODY — от классики до свежих релизов.</p>
+    </div>
+
+    <div class="catalog-products-grid">
+        <div class="product-card cat-rock">
+            <div class="product-image" style="position: relative;">
+                <img src="am-cover.JPG" alt="Arctic Monkeys — AM">
+            </div>
+            <div class="product-info">
+                <div class="product-name">AM</div>
+                <div class="product-artist-catalog">Arctic Monkeys</div>
+                <div class="product-price">4 990 ₽</div>
+                <a href="am.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-kpop">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-new">НОВИНКА</span>
+                <img src="arirang-cover.JPG" alt="BTS — ARIRANG">
+            </div>
+            <div class="product-info">
+                <div class="product-name">ARIRANG</div>
+                <div class="product-artist-catalog">BTS</div>
+                <div class="product-price">5 490 ₽</div>
+                <a href="arirang.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rnb">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-hit">ХИТ</span>
+                <img src="blonde-cover.JPG" alt="Frank Ocean — Blonde">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Blonde</div>
+                <div class="product-artist-catalog">Frank Ocean</div>
+                <div class="product-price">6 990 ₽</div>
+                <a href="blonde.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-pop">
+            <div class="product-image" style="position: relative;">
+                <img src="brat-cover.JPG" alt="Charli XCX — BRAT">
+            </div>
+            <div class="product-info">
+                <div class="product-name">BRAT</div>
+                <div class="product-artist-catalog">Charli XCX</div>
+                <div class="product-price">3 490 ₽</div>
+                <a href="brat.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rock">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-sale">-30%</span>
+                <img src="diamond-eyes-cover.JPG" alt="Deftones — Diamond Eyes">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Diamond Eyes</div>
+                <div class="product-artist-catalog">Deftones</div>
+                <div class="product-price">2 793 ₽ <span class="old-price">3 990 ₽</span></div>
+                <a href="diamond-eyes.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rap">
+            <div class="product-image" style="position: relative;">
+                <img src="dont-be-dumb-cover.JPG" alt="A$AP Rocky — Don't Be Dumb">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Don't Be Dumb</div>
+                <div class="product-artist-catalog">A$AP Rocky</div>
+                <div class="product-price">3 990 ₽</div>
+                <a href="dont-be-dumb.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-pop">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-sale">-30%</span>
+                <img src="hmhas-cover.JPG" alt="Billie Eilish — HIT ME HARD AND SOFT">
+            </div>
+            <div class="product-info">
+                <div class="product-name">HIT ME HARD AND SOFT</div>
+                <div class="product-artist-catalog">Billie Eilish</div>
+                <div class="product-price">2 793 ₽ <span class="old-price">3 990 ₽</span></div>
+                <a href="hmhas.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rap">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-new">НОВИНКА</span>
+                <img src="iceman-cover.JPG" alt="Drake — ICEMAN">
+            </div>
+            <div class="product-info">
+                <div class="product-name">ICEMAN</div>
+                <div class="product-artist-catalog">Drake</div>
+                <div class="product-price">4 790 ₽</div>
+                <a href="iceman.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rnb">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-sale">-30%</span>
+                <img src="larger-than-life-cover.JPG" alt="Brent Faiyaz — Larger Than Life">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Larger Than Life</div>
+                <div class="product-artist-catalog">Brent Faiyaz</div>
+                <div class="product-price">2 303 ₽ <span class="old-price">3 290 ₽</span></div>
+                <a href="larger-than-life.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rnb">
+            <div class="product-image" style="position: relative;">
+                <img src="sos-cover.JPG" alt="SZA — SOS">
+            </div>
+            <div class="product-info">
+                <div class="product-name">SOS</div>
+                <div class="product-artist-catalog">SZA</div>
+                <div class="product-price">4 490 ₽</div>
+                <a href="sos.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rnb">
+            <div class="product-image" style="position: relative;">
+                <img src="starboy-cover.JPG" alt="The Weeknd — Starboy">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Starboy</div>
+                <div class="product-artist-catalog">The Weeknd</div>
+                <div class="product-price">4 290 ₽</div>
+                <a href="starboy.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rap">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-sale">-30%</span>
+                <img src="tdoss-cover.JPG" alt="Eminem — The Death Of Slim Shady">
+            </div>
+            <div class="product-info">
+                <div class="product-name">The Death Of Slim Shady</div>
+                <div class="product-artist-catalog">Eminem</div>
+                <div class="product-price">3 143 ₽ <span class="old-price">4 490 ₽</span></div>
+                <a href="tdoss.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-kpop">
+            <div class="product-image" style="position: relative;">
+                <img src="thealbum-cover.JPG" alt="BLACKPINK — THE ALBUM">
+            </div>
+            <div class="product-info">
+                <div class="product-name">THE ALBUM</div>
+                <div class="product-artist-catalog">BLACKPINK</div>
+                <div class="product-price">4 290 ₽</div>
+                <a href="thealbum.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-rock">
+            <div class="product-image" style="position: relative;">
+                <img src="the-neighbourhood-cover.jpeg" alt="The Neighbourhood">
+            </div>
+            <div class="product-info">
+                <div class="product-name">The Neighbourhood</div>
+                <div class="product-artist-catalog">The Neighbourhood</div>
+                <div class="product-price">3 290 ₽</div>
+                <a href="the-neigbourhood.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="product-card cat-kpop">
+            <div class="product-image" style="position: relative;">
+                <span class="badge badge-sale">-30%</span>
+                <img src="this-is-for-cover.JPG" alt="TWICE — THIS IS FOR">
+            </div>
+            <div class="product-info">
+                <div class="product-name">THIS IS FOR</div>
+                <div class="product-artist-catalog">TWICE</div>
+                <div class="product-price">2 653 ₽ <span class="old-price">3 790 ₽</span></div>
+                <a href="this-is-for.html" class="card-btn">Подробнее →</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col brand">
+            <a href="index.html" class="footer-logo">MELODY</a>
+            <p class="footer-tagline">Ваш проводник в мир винила и музыки. Качественные пластинки, редкие издания и уникальные коллекции.</p>
+        </div>
+        <div class="footer-col nav">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contacts">
+            <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+            <p>г. Миасс, ул. Мелодичная, 118</p>
+            <p>+7 (937) 162-49-60</p>
+            <p>info@melody-shop.ru</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">MAX</a>
+                <a href="#" class="social-btn">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>© 2026 MELODY. Все права защищены.</p></div>
+</footer>
+
+<a href="#" class="scroll-top"><span class="scroll-top-arrow">↑</span></a>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | MELODY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/icon.PNG">
+</head>
+<body>
+
+<!-- ШАПКА (скопируйте из index.html) -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo"><a href="index.html" class="logo-font">melody</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-inner">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+                <a href="cart.html" class="nav_link cart-link-mobile">КОРЗИНА <span class="cart-badge-mobile">2</span></a>
+                <a href="login.html" class="nav_link">ВХОД</a>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+            <a href="about.html" class="nav_link">О НАС</a>
+            <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            <a href="cart.html" class="nav_link cart-link">КОРЗИНА <span class="cart-badge">2</span></a>
+            <a href="login.html" class="nav_link">ВХОД</a>
+        </nav>
+    </div>
+</header>
+
+<main class="contacts-container">
+
+    <img src="center-girl.png" alt="Девушка" class="girl-bg-left">
+
+    <div class="contacts-content-right">
+        <h1 class="contacts-title">КОНТАКТЫ</h1>
+
+        <div class="contact-blocks">
+            <!-- Блок 1: Форма -->
+            <div class="contact-block glass-card">
+                <h3>Написать нам</h3>
+
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Ваше имя" required class="form-input">
+                    <input type="email" name="email" placeholder="Ваш E-mail" required class="form-input">
+                    <textarea name="message" placeholder="Ваше сообщение" rows="3" required class="form-input"></textarea>
+                    <button type="submit" class="form-btn">Отправить сообщение</button>
+                </form>
+            </div>
+
+            <!-- Блок 2: Соцсети -->
+            <div class="contact-block glass-card">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links-centered">
+                    <a href="#" class="social-btn">VK</a>
+                    <a href="#" class="social-btn">MAX</a>
+                    <a href="#" class="social-btn">OK</a>
+                </div>
+            </div>
+
+            <!-- Блок 3: Адрес и карта -->
+            <div class="contact-block glass-card">
+                <h3>Как нас найти</h3>
+                <div class="address-info">
+                    <p>г. Миасс, ул. Мелодичная, 118</p>
+                    <p>График работы: 09:00 - 21:00, без выходных и перерывов</p>
+                    <p><a href="tel:+79371624960">+7 (937) 162-49-60</a></p>
+                    <p><a href="mailto:info@melody-shop.ru">info@melody-shop.ru</a></p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=60.108443%2C55.045482&z=15&pt=60.108443,55.045482,flag&mode=search&sll=60.108443,55.045482&text=Миасс%20Мелодичная%20118"
+                        class="map-iframe"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- ФУТЕР (скопируйте из index.html) -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col brand">
+            <a href="index.html" class="footer-logo">MELODY</a>
+            <p class="footer-tagline">Ваш проводник в мир винила и музыки.</p>
+        </div>
+        <div class="footer-col nav">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contacts">
+            <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+            <p>г. Миасс, ул. Мелодичная, 118</p>
+            <p>+7 (937) 162-49-60</p>
+            <p>info@melody-shop.ru</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">MAX</a>
+                <a href="#" class="social-btn">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>© 2026 MELODY. Все права защищены.</p></div>
+</footer>
+
+<a href="#" class="scroll-top"><span class="scroll-top-arrow">↑</span></a>
+</body>
+</html>

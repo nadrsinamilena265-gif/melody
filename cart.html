@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | MELODY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.PNG">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div class="logo"><a href="index.html" class="logo-font">melody</a></div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+        <nav class="mobile-nav">
+            <div class="mobile-nav-inner">
+                <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+                <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+                <a href="about.html" class="nav_link">О НАС</a>
+                <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+                <a href="cart.html" class="nav_link cart-link-mobile">КОРЗИНА <span class="cart-badge-mobile">2</span></a>
+                <a href="login.html" class="nav_link">ВХОД</a>
+            </div>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="index.html" class="nav_link">ГЛАВНАЯ</a>
+            <a href="catalog.html" class="nav_link">КАТАЛОГ</a>
+            <a href="about.html" class="nav_link">О НАС</a>
+            <a href="contacts.html" class="nav_link">КОНТАКТЫ</a>
+            <a href="cart.html" class="nav_link cart-link">КОРЗИНА <span class="cart-badge">2</span></a>
+            <a href="login.html" class="nav_link">ВХОД</a>
+        </nav>
+    </div>
+</header>
+
+<main class="cart-page">
+    <div class="cart-container">
+        <section class="cart-items">
+            <h1 class="section-title" style="text-align: left; margin: 0 0 30px;">ВАША КОРЗИНА</h1>
+            
+            <div class="cart-item">
+                <img src="blonde-cover.JPG" alt="Frank Ocean — Blonde" class="cart-item-img">
+                <div class="cart-item-info">
+                    <h3 class="cart-item-title">Blonde</h3>
+                    <p class="cart-item-price">6 990 ₽</p>
+                    <p class="cart-item-artist">Frank Ocean</p>
+                    <p class="cart-item-condition" style="font-size: 12px; color: #ff88c3; margin-top: 6px;">Состояние: Новая</p>
+                </div>
+                <div class="cart-item-actions">
+                    <div class="quantity-control">
+                        <a href="cart.html" class="qty-link">−</a>
+                        <input type="number" class="qty-input" value="1" min="1" max="99" readonly>
+                        <a href="cart.html" class="qty-link">+</a>
+                    </div>
+                    <a href="cart.html" class="remove-link">Удалить</a>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="hmhas-cover.JPG" alt="Billie Eilish — HIT ME HARD AND SOFT" class="cart-item-img">
+                <div class="cart-item-info">
+                    <h3 class="cart-item-title">HIT ME HARD AND SOFT</h3>
+                    <p class="cart-item-price">2 793 ₽</p>
+                    <p class="cart-item-artist">Billie Eilish</p>
+                    <p class="cart-item-condition" style="font-size: 12px; color: #ff88c3; margin-top: 6px;">Состояние: Новая</p>
+                </div>
+                <div class="cart-item-actions">
+                    <div class="quantity-control">
+                        <a href="cart.html" class="qty-link">−</a>
+                        <input type="number" class="qty-input" value="1" min="1" max="99" readonly>
+                        <a href="cart.html" class="qty-link">+</a>
+                    </div>
+                    <a href="cart.html" class="remove-link">Удалить</a>
+                </div>
+            </div>
+
+            <div class="cart-buttons">
+                <a href="catalog.html" class="glass-btn">← Вернуться в каталог</a>
+                <a href="cart.html" class="clear-cart-btn">Очистить корзину</a>
+            </div>
+        </section>
+        
+        <aside class="cart-summary">
+            <h2>ИТОГО</h2>
+            <div class="summary-row">
+                <span>Товары (2 шт)</span>
+                <span>9 783 ₽</span>
+            </div>
+            <div class="summary-row">
+                <span>Доставка по РФ</span>
+                <span class="free">Бесплатно</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>К оплате</span>
+                <span>9 783 ₽</span>
+            </div>
+            
+            <a href="checkout.html" class="checkout-btn">ОФОРМИТЬ ЗАКАЗ →</a>
+            
+            <p class="delivery-note">
+                Бесплатная доставка активна
+                <br>
+                <span>                Самовывоз в г. Миасс — 0 ₽
+            </p>
+        </aside>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col brand">
+            <a href="index.html" class="footer-logo">MELODY</a>
+            <p class="footer-tagline">Ваш проводник в мир винила и музыки. Качественные пластинки, редкие издания и уникальные коллекции.</p>
+        </div>
+        <div class="footer-col nav">
+            <h4>НАВИГАЦИЯ</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contacts">
+            <h4>СВЯЗАТЬСЯ С НАМИ</h4>
+            <p>г. Миасс, ул. Мелодичная, 118</p>
+            <p>+7 (937) 162-49-60</p>
+            <p>info@melody-shop.ru</p>
+            <div class="social-links">
+                <a href="#" class="social-btn">VK</a>
+                <a href="#" class="social-btn">MAX</a>
+                <a href="#" class="social-btn">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>© 2026 MELODY. Все права защищены.</p></div>
+</footer>
+
+<a href="#" class="scroll-top"><span class="scroll-top-arrow">↑</span></a>
+</body>
+</html>
